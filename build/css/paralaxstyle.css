@@ -1,0 +1,101 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Bold.otf')  format('opentype'),
+        url('../fonts/FiraSans-Bold.woff') format('woff'), url('../fonts/FiraSans-Bold.ttf')  format('truetype'), url('../fonts/FiraSans-Bold.svg#FiraSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Medium.otf')  format('opentype'),
+        url('../fonts/FiraSans-Medium.woff') format('woff'), url('../fonts/FiraSans-Medium.ttf')  format('truetype'), url('../fonts/FiraSans-Medium.svg#FiraSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Regular.otf')  format('opentype'),
+        url('../fonts/FiraSans-Regular.woff') format('woff'), url('../fonts/FiraSans-Regular.ttf')  format('truetype'), url('../fonts/FiraSans-Regular.svg#FiraSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Light.otf')  format('opentype'),
+        url('../fonts/FiraSans-Light.woff') format('woff'), url('../fonts/FiraSans-Light.ttf')  format('truetype'), url('../fonts/FiraSans-Light.svg#FiraSans-Light') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans-ExtraLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-ExtraLight.otf')  format('opentype'),
+        url('../fonts/FiraSans-ExtraLight.woff') format('woff'), url('../fonts/FiraSans-ExtraLight.ttf')  format('truetype'), url('../fonts/FiraSans-ExtraLight.svg#FiraSans-ExtraLight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'B20Sans';
+    src: url('../fonts/B20Sans.eot?#iefix') format('embedded-opentype'),  url('../fonts/B20Sans.woff') format('woff'), url('../fonts/B20Sans.ttf')  format('truetype'), url('../fonts/B20Sans.svg#B20Sans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,
+body{
+    min-height: 100%;
+    /*background: tr*/
+}
+
+
+.back_f_srceen_img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 300vh;
+    z-index: 1;
+
+    background: rgba(52, 52, 52, 1);
+}
+.back_f_srceen_img .shadow_block{
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(38%, rgba(15, 15, 15, 0.99)), color-stop(85%, rgba(186, 146, 78, -0.01)));
+    background: -webkit-linear-gradient(bottom, rgba(15, 15, 15, 0.99) 38%, rgba(186, 146, 78, -0.01) 85%);
+    background: -o-linear-gradient(bottom, rgba(15, 15, 15, 0.99) 38%, rgba(186, 146, 78, -0.01) 85%);
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.99) 38%, rgba(186, 146, 78, -0.01) 85%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    z-index: 1;
+}
+.back_f_srceen_img> img{
+    display: block;
+    /*max-height: 100%;*/
+    max-width: 130%;
+    z-index: -1;
+    position: relative; 
+
+}
+#particles-js{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: 10;
+}
+#particles-js canvas{
+    z-index: 10;
+    position: absolute;
+}
